@@ -1,0 +1,353 @@
+
+section .container{
+    width: 1180px;
+    margin: auto;
+}
+section .container .hotel-top{
+    width: 100%;
+    height: 400px;
+    padding: 30px 0;
+    /*box-sizing: border-box;*/
+}
+section .container .hotel-top .hotel-top-left{
+    height: 100%;
+    width: 33%;
+    border: 2px solid #1ab2db;
+    float: left;
+}
+section .hotel-top-left .title ul{
+    margin-top: 10px;
+    width: 100%;
+    height: 34px;
+    padding: 0px 20px;
+    box-sizing: border-box;
+}
+section .hotel-top-left .title ul li {
+    float: left;
+    font-size: 24px;
+    color: #999;
+    padding: 0px 10px;
+    text-align: center;
+    box-sizing: border-box;
+    border-bottom: 3px solid #ccc;
+    height: 34px;
+}
+section .hotel-top-left .title ul .tab-active {
+    color: #1ab2db;
+    border-bottom: 3px solid #1ab2db;
+}
+section .hotel-top-left .content{
+    padding: 10px 0 0 25px;
+    box-sizing: border-box;
+    color: #333;
+    font-size: 14px;
+}
+section .hotel-top-left .content input{
+    height: 30px;
+}
+section .content .destination ,.time ,.hotel-rank{
+    margin-top: 8px;
+    margin-bottom: 20px;
+}
+section .content .hotel-rank,.time{
+    margin-left: -13px;
+}
+section .content .destination input,section .content .keycode input{
+    width: 227px;
+    text-indent: 7px;
+}
+section .content .time input{
+    width: 97px;
+}
+section .content select{
+    height: 30px;
+    width: 126px;
+    font-size: 14px;
+}
+section .content .word a ,.word{
+    color: #1AB2DB;
+}
+section .content .word{
+    margin-left: 30px;
+    margin-top: 19px;
+}
+section .i-city{
+    border-bottom: 1px dotted #ddd;
+    margin-bottom: 30px;
+    margin-top: 10px;
+}
+section .i-city p{
+    width: 100%;
+    height: 20px;
+    line-height: 20px;
+    font-size: 14px;
+    margin-bottom: 12px;
+    overflow: hidden;
+}
+section .content .btn{
+    width: 157px;
+    height: 33px;
+    background-color: #1AB2DB;
+    display: block;
+    color: #fff;
+    line-height: 33px;
+    border-radius: 3px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    float: right;
+    margin-right: 34px;
+    margin-top: 18px;
+}
+section .container .hotel-top .hotel-top-right{
+    float: left;
+    position: relative;
+    margin-left: 20px;
+    width: 63%;
+    height: 100%;
+    cursor: pointer;
+}
+section .container .hotel-top .hotel-top-right .hotel-banner li{
+    position: absolute;
+    top:0;
+    left: 0;
+}
+section .container .hotel-top .hotel-top-right .hotel-banner li:nth-of-type(1){
+    z-index: 9;
+}
+section .container .hotel-top .hotel-top-right .ctrl {
+    position: absolute;
+    bottom: 40px;
+    right: 50px;
+    z-index: 10;
+}
+section .container .hotel-top .hotel-top-right .ctrl li{
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    border: 1px solid #1ab2db;
+    float: left;
+    margin-left: 10px;
+}
+section .container .hotel-top .hotel-top-right .ctrl .active{
+    background-color:  #1ab2db;
+}
+section .overseas-hotel .overseas-hotel-header{
+    border-bottom: 1px solid #ddd;
+    height: 35px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+section .overseas-hotel-header ul li {
+    float: left;
+    padding: 6px 10px;
+}
+section .overseas-hotel-header  ul li:hover {
+    background-color: #003399;
+    border-radius: 3px;
+}
+section .overseas-hotel-header .remen li:hover {
+    background-color: #00a0e9;
+}
+section .overseas-hotel-header .dangji li:hover {
+    background-color: #e7a54d;
+}
+section .overseas-hotel-header  ul li:hover a{
+    color: #fff;
+}
+section .overseas-hotel-header  ul li a{
+    font-size: 20px;
+    color: black;
+    font-weight: bold;
+}
+section .overseas-hotel-header  .left-header{
+    font-size: 25px;
+    font-weight: bolder;
+    color: #333;
+    border-left: 5px solid blue;
+    text-indent: 10px;
+}
+section .overseas-hotel-header  .right-header{
+    font-size:17px;
+    font-weight: bolder;
+    color: #333;
+    line-height: 35px;
+}
+section .overseas-hotel-content{
+    margin-top: 20px;
+    margin-bottom: 30px;
+    display: flex;
+    flex-direction: row;
+}
+section .overseas-hotel-content .content{
+    padding: 0px 10px;
+    box-sizing: border-box;
+}
+section .overseas-hotel-content .item {
+    float: left;
+    width: 291px;
+    height: 260px;
+    padding: 0 0px 10px 10px;
+    box-sizing: border-box;
+}
+section .content .item .box{
+    border:1px solid #ccc;
+    height: 100%;
+    position: relative;
+}
+section .content .item .box h3{
+    padding-top: 5px;
+    padding-left: 12px;
+    font-family: 微软雅黑;
+    color: rgb(0, 0, 0);
+    font-size: 18px;
+}
+section .content .item .box h3 div{
+    font-size: 12px;
+    display: inline-block;
+    float: right;
+    margin-top: 8px;
+    margin-right: 10px;
+}
+section .money div{
+    display: inline-block;
+    float: right;
+    margin-top: 10px;
+    margin-right: 10px;
+}
+section .money button{
+    border: 1px solid #cccccc;
+    background-color: #eb6100;
+    font-size: 14px;
+    color: #ffffff;
+    padding: 3px;
+}
+section .content .item .box .money{
+    padding-top: 10px;
+    padding-left: 12px;
+    font-size: 14px;
+    font-family: 微软雅黑;
+}
+section .content .money span{
+    font-family: arial, helvetica, sans-serif;
+    font-size: 34px;
+    color: red;
+}
+section .content .item .box:hover{
+    box-shadow: 0px 0px 8px  rgba(0,0,0,.6);
+    transform: translate3d(0,-3px ,0);
+}
+section .recommend{
+    width: 0;
+    height: 0;
+    border-top: 20px solid #ff002a;
+    border-left: 20px solid transparent;
+    border-bottom: 20px solid transparent;
+    border-right: 20px solid #ff002a;
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 11;
+}
+section .recommend .text{
+    position: absolute;
+    top: -15px;
+    right: -17px;
+    width: 30px;
+    height: 30px;
+    color: #fff;
+    transform: rotate(45deg);
+    font-size: 14px;
+    font-weight: bold;
+}
+.squeezebox .title{
+    width: 100%;
+    height: 35px;
+    border-left:4px solid #8fc31f;
+    border-bottom: 1px solid #999;
+    font-size: 25px;
+    font-weight: bolder;
+    color: #333;
+    margin-bottom: 40px;
+    line-height: 35px;
+    text-indent: 10px;
+}
+.squeezebox .img-box ul{
+    width: 100%;
+    height: 300px;
+    margin-bottom: 60px;
+}
+.squeezebox .img-box ul li{
+    height: 300px;
+    float: left;
+    color: #ffffff;
+    text-align: center;
+    vertical-align: middle;
+    width: 195px;
+    overflow: hidden;
+}
+.squeezebox .img-box ul li div{
+    margin-top: 100px;
+    display: inline-block;
+    font-size: 30px;
+    line-height: 40px;
+    width: 30px;
+}
+.squeezebox .img-box ul li:nth-of-type(1){
+    background-image: url(../images/img/tavern/tese/travel-accordion-1.jpg);
+    opacity: 1;
+}
+.squeezebox .img-box ul li:nth-of-type(2){
+    background-image: url(../images/img/tavern/tese/travel-accordion-2.jpg);
+    opacity: 1;
+}
+.squeezebox .img-box ul li:nth-of-type(3){
+    background-image: url(../images/img/tavern/tese/travel-accordion-3.jpg);
+    opacity: 1;
+}
+.squeezebox .img-box ul li:nth-of-type(4){
+    background-image: url(../images/img/tavern/tese/travel-accordion-4.jpg);
+    opacity: 1;
+}
+.squeezebox .img-box ul li:nth-of-type(5){
+    background-image: url(../images/img/tavern/tese/travel-accordion-5.jpg);
+    opacity: 1;
+}
+.squeezebox .img-box ul li:nth-of-type(6){
+    background-image: url(../images/img/tavern/tese/travel-accordion-6.jpg);
+    opacity: 1;
+}
+aside .sidebar{
+    height: 310px;
+    background-color: #fff;
+    width: 70px;
+    position: fixed;
+    bottom: 18%;
+    left:9%;
+    z-index: 99;
+    display: none;
+    transition: all .3s;
+}
+aside .sidebar ul{
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,.1);
+}
+aside .sidebar li ,aside .sidebar div{
+    width: 100%;
+    height: 20%;
+    text-align: center;
+    margin-top: 2px;
+    padding: 15px 12px;
+    box-sizing: border-box!important;
+    font-size: 12px;
+}
+aside .sidebar  li:hover{
+    background: #003399;
+    color: #fff;
+}
+aside .active{
+    background: #003399;
+    color: #fff;
+}

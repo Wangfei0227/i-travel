@@ -1,0 +1,380 @@
+* {
+    margin: 0;
+    padding:0;
+}
+ul,ol {
+    list-style: none;
+}
+body {
+    overflow-x: hidden;
+}
+body , html {
+    height: 100%;
+}
+.container {
+    width: 1200px;
+    margin: 0 auto;
+}
+.divSize {
+    width: 100%;
+    height: 100%;
+}
+
+.bought-box {
+    width: 100%;
+    padding: 15px 0;
+    background-color: rgba(255, 255, 255, 0.85);
+    position: absolute;
+    z-index: 3;
+}
+.bought {
+    width: 1040px;
+    margin: 0 auto;
+}
+.bought-text {
+    font-family: 微软雅黑;
+    padding-top: 5px;
+    height: 28px;
+    display: inline-block;
+    font-size: 15px;
+    color: #737374;
+}
+.bought-text > a {
+    text-decoration: none;
+    color: #737374;
+}
+.bought-text > a:hover {
+    color: #f2b034;
+}
+.buyNow {
+    width: 120px;
+    height: 30px;
+    text-align: center;
+    color: #666;
+    background-color: #ffcc00;
+    font-size: 14px;
+    display: inline-block;
+    line-height: 30px;
+    float: right;
+}
+.buyNow:hover {
+    color: #fff;
+    text-decoration: none;
+}
+.rightFixed {
+    position: fixed;
+    top: 40%;
+    right: 70px;
+    z-index: 999;
+}
+.rightFixed > li {
+    width: 5px;
+    height: 5px;
+    background-color: rgba(255,255,255,.5);
+    border-radius: 50%;
+    margin: 20px 0;
+    cursor: pointer;
+    transition: all 1s;
+}
+.rightFixed > li:hover {
+    transform: scale(1.5);
+}
+
+
+.brine {
+
+    background: url('../images/img/travel_message/ms-bg.png')no-repeat center 0 ;
+    overflow: hidden;
+}
+.brine > img:nth-of-type(1){
+    margin: 150px 0 50px 105px;
+}
+.brine > img:nth-of-type(2) {
+    margin-left: 300px;
+}
+.brine > .text {
+    width: 1200px;
+    margin: 10px auto;
+    text-align: center;
+    color: #fff;
+    font-size: 18px;
+}
+.brine > .text > p {
+    margin: 0;
+}
+.brine > img:nth-of-type(3) {
+    height: 50%;
+    margin-left: 10%;
+}
+.banner {
+    background-color: #084b6e;
+    position: relative;
+    margin-top: -10px;
+    overflow: hidden;
+}
+.bannerTitle {
+    position: absolute;
+    top: 5%;
+    left: 20%;
+}
+.imgTitle > .text1 {
+    font-size: 24px;
+    margin-bottom: 3px;
+    color: #fff;
+
+}
+
+.imgTitle > .text1 > span {
+    color: #ffcc00;
+
+}
+
+.banner > .bannerBox {
+    width:750px;
+    margin: 90px auto 0 auto;
+    position: relative;
+}
+.imgTitle > .text2 {
+    color: #fff;
+    margin: 20px 0;
+}
+.imgDesc {
+    position: relative;
+}
+.imgDesc > img {
+    position: absolute;
+    top: 45%;
+    left: 0;
+}
+.desc-01 {
+    color: #35b0d2;
+    display: inline-block;
+    text-align: center;
+    margin-left: 15px;
+}
+.bannerBox > li {
+    position: absolute;
+    left: 0;
+    top: 0;
+    display: none;
+}
+.bannerBox li > img {
+    width: 100%;
+    margin-top: 55px;
+}
+.bannerBox li:nth-of-type(2) > .imgTitle {
+    text-align: right;
+}
+.bannerBox li:nth-of-type(2) > .imgDesc {
+    width: 500px;
+    margin-left: 230px;
+}
+.bannerBox li:nth-of-type(2) > img {
+    margin-top:-110px;
+}
+
+.yuan {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    z-index: 999;
+}
+.yuan > li {
+    width: 15px;
+    height: 15px;
+    float: left;
+    border: 2px solid  #1ab2db;
+    border-radius: 50%;
+    margin-right: 15px;
+    text-align: center;
+    line-height: 20px;
+    cursor: pointer;
+
+}
+.yuan .bgc {
+    background-color: #1ab2db;
+    width: 17px;
+    height: 17px;
+}
+
+.gray {
+    background: url(../images/img/travel_message/ms-bg3.png) center 0 no-repeat;
+    background-size: cover;
+    position: relative;
+    overflow: hidden;
+}
+.mention {
+    width: 1080px;
+    height: 200px;
+    margin: 100px 0 0 60px;
+
+}
+.mention-l {
+    width: 720px;
+    height: 200px;
+    float: left;
+    font-family: 微软雅黑;
+    position: relative;
+    background: rgb(102, 204, 255);
+    color: #fff;
+    padding: 25px 0 0 20px;
+    box-sizing: border-box;
+}
+.mention-l > img {
+    width: 60%;
+}
+.mention-l > .qc {
+    font-size: 16px;
+    margin: 20px 0;
+}
+.mention-l > .eng {
+    width: 500px;
+    font-size: 10px;
+}
+.mention-r {
+    width: 360px;
+}
+.fontT {
+    padding-left: 50px;
+    font-family: '华文仿宋';
+    background-color: #fff;
+    height: 200px;
+    float: left;
+}
+.fontT > .text-top  {
+    font-family: Courier New;
+    font-size: 50px;
+    padding-top: 30px;
+}
+
+.fontT > .textCenter {
+
+    font-size: 20px;
+    margin-top: -20px;
+
+}
+.fontT > .line {
+    width: 50px;
+    height: 1px;
+    background-color: #666;
+    margin-top: 20px;
+}
+.view {
+    width: 1180px;
+    height: 200px;
+    margin-left: 150px;
+}
+.view > img {
+    float: left;
+    height: 200px;
+}
+.viewT {
+    width: 360px;
+}
+.view > img:nth-of-type(2) {
+    width: 600px;
+}
+.wuzZ {
+    width: 1269px;
+    margin-left: 50px;
+}
+.wuzZ > img {
+    height: 200px;
+    float: left;
+}
+.wuzZT {
+    width: 350px;
+}
+.wuzZ > img:nth-of-type(3) {
+    width: 350px;
+}
+.tourPlan {
+    position: relative;
+}
+
+.leftTab {
+    position: absolute;
+    top: 50%;
+    margin-top: -104px;
+    left: 100px;
+    width: 80px;
+    height: 208px;
+    padding: 10px 0;
+    box-sizing: border-box;
+    border: 1px solid #3399cc;
+}
+.leftTab > li {
+    width: 80px;
+    height:45px;
+    text-align: center;
+    line-height: 45px;
+    /*position: relative;*/
+    cursor: pointer;
+}
+.leftTab > .active {
+    width: 90px;
+    margin-left: -5px;
+    color: #fff;
+    background-color: #3399cc;
+}
+/*.leftTab > div {*/
+    /*width: 0;*/
+    /*height: 0;*/
+    /*border-top: 10px solid transparent;*/
+    /*border-bottom:10px solid transparent;*/
+    /*border-left: 20px solid #3399cc;*/
+    /*position: absolute;*/
+    /*right: -25px;*/
+    /*top: 22px;*/
+/*}*/
+.leftTab > li > .blue {
+    border-left: 20px solid #3399cc;
+}
+
+.tourPlanR {
+    position: absolute;
+    left:20%;
+    top: 50px;
+    width: 1100px;
+    height: 600px;
+
+}
+.tourPlanR > li {
+    position: absolute;
+    left: 0;
+    top: 0;
+    display: none;
+
+}
+.tourPlanR > li .orDer {
+    width: 10px;
+    height: 10px;
+    background-color: #3399cc;
+    border-radius: 50%;
+    display: inline-block;
+    margin-right: 10px;
+
+
+}
+.tourPlanR > li span {
+    text-indent: 20px;
+    font-weight: bold;
+    font-size: 15px;
+}
+.tourPlanR > li .title {
+    font-weight: bold;
+    display: inline-block;
+    font-size: 15px;
+}
+.tourPlanR > li .yuanBox {
+    width: 100px;
+    display: inline-block;
+}
+.tourPlanR > li .box {
+    margin:10px 0;
+}
+.tourPlanR > li .textP {
+    margin-left: 100px;
+    line-height: 30px;
+    font-size: 12px;
+}

@@ -1,0 +1,571 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>机票</title>
+    <link href="https://cdn.bootcss.com/bootstrap/3.3.5/css/bootstrap.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/Plane%20ticket.css">
+     <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"/>
+</head>
+<body>
+<header>
+    <div class="header">
+        <div class="container">
+            <div class="logo">
+                <h1>i 旅行</h1>
+            </div>
+            <div class="hotline">
+                <ul>
+                    <li>客服中心</li>
+                    <li>24小时热线：400-855-6666</li>
+                </ul>
+                <div class="phone">
+                    <div class="text icon-mobile-phone"></div>
+                    <!--二维码-->
+                    <div class="planar">
+                        <img src="./images/icon/i_APP_11.jpg" alt="">
+                        <p>手机扫码快速下载</p>
+                        <p>App享受最多50% 优惠力度</p>
+                    </div>
+                </div>
+                <div class="wechat">
+                    <div class="text icon-comments"></div>
+                    <!--二维码-->
+                    <div class="planar">
+                        <img src="./images/icon/i_wechat_11.jpg" alt="">
+                        <p>i旅行微信公众号: </p>
+                        <p>手机扫一扫，享受专属福利</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <div class="nav-box">
+        <div class="container">
+            <ul>
+                <li>
+                    <a href="index.html">
+                        <i class="icon-home"></i>
+                        首页
+                    </a>
+                </li>
+                <li>
+                    <a href="trip.html">
+                        <i class="icon-globe"></i>
+                        旅游
+                    </a>
+                </li>
+                <li>
+                    <a href="hotel/hotel.html">
+                        <i class="icon-hospital"></i>
+                        酒店
+                    </a>
+                </li>
+                <li  class="active">
+                    <a href="Plane%20ticket.html">
+                        <i class="icon-plane"></i>
+                        机票
+                    </a>
+                </li>
+                <li>
+                    <a href="strategy/index.html">
+                        <i class="icon-book"></i>
+                        攻略
+                    </a>
+                </li>
+            </ul>
+            <div class="nav-logo">
+                <a href="">登录</a>
+                <span>|</span>
+                <a href="">注册</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- 轮播图开始 -->
+    <div class="container" style="position: relative;height: 470px">
+        <div id="slidershow" class="carousel slide" data-ride="carousel" data-interval="4000" >
+            <!-- 下方小圆点-->
+            <ol class="carousel-indicators">
+                <li data-target="#slidershow" data-slide-to="0" class="active"></li>
+                <li data-target="#slidershow" data-slide-to="1"></li>
+                <li data-target="#slidershow" data-slide-to="2"></li>
+                <li data-target="#slidershow" data-slide-to="3"></li>
+            </ol>
+
+            <!-- 图片保存位 -->
+            <div class="carousel-inner">
+                <div class="item active">
+                    <img src="images/img/fly01_banner0315.jpg" alt="...">
+                </div>
+                <div class="item">
+                    <img src="images/img/fly02_banner0315.jpg" alt="...">
+                </div>
+                <div class="item">
+                    <img src="images/img/fly03_banner0315.jpg" alt="...">
+                </div>
+                <div class="item">
+                    <img src="images/img/fly04_banner0315.jpg" alt="...">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="clear"></div>
+    <!-- 轮播图结束 -->
+    <!-- i-tab切换 -->
+    <div class="i_ea">
+        <ol class="lb" >
+            <li class="li_1 cur"></li>
+            <li></li>
+            <li></li>
+            <li></li>
+        </ol>
+        <div class="i_tab">
+            <ul class="i_tab_l ">
+                <li class="travel clearfix">
+                    <a href="javascript:;">旅游</a>
+                    <div class="i_tab_r">
+                        <div class="i_box">
+                            <div class="i_title">
+                                <a href="javascript:;" class="line">特卖汇</a>
+                                <a href="javascript:;">出境旅游</a>
+                                <a href="javascript:;">国内旅游</a>
+                            </div>
+
+
+
+                        </div>
+                    </div>
+                </li>
+                <li class="hotel clearfix">
+                    <a href="javascript:;">酒店</a>
+                    <div class="i_tab_r">
+                        <div class="i_box">
+                            <div class="i_title">
+                                <a href="javascript:;" class="line">国内酒店</a>
+                                <a href="javascript:;">海外酒店</a>
+                                <a href="javascript:;">酒店团购</a>
+                            </div>
+
+                        </div>
+                    </div>
+                </li>
+                <li class="cur show fly clearfix">
+                    <a href="javascript:;">机票</a>
+                    <div class="i_tab_r">
+                        <div class="i_box">
+                            <div class="i_title">
+                                <a href="javascript:;" class="line">国内机票</a>
+                                <a href="javascript:;">国际机票</a>
+                                <a href="javascript:;">发现低价</a>
+                            </div>
+
+                        </div>
+                    </div>
+                </li>
+                <li class="ticket clearfix">
+                    <a href="javascript:;">门票</a>
+                    <div class="i_tab_r">
+                        <div class="discount i-ticket">
+                            <form action="">
+                                <div class="i-city">
+                                    <p>
+                                        <span>热门城市：</span>
+                                        <a href="#">上海</a>
+                                        <a href="#">广州</a>
+                                        <a href="#">深圳</a>
+                                        <a href="#">北京</a>
+                                        <a href="#">成都</a>
+                                        <a href="#">杭州</a>
+                                        <a href="#">苏州</a>
+                                        <a href="#">青岛</a>
+                                    </p>
+                                    <p>
+                                        <span>热门活动: </span>
+                                        <a href="#">门票特权日</a>
+                                        <a href="#">早秋赏景</a>
+                                        <a href="#">国庆提前订</a>
+                                        <a href="#">旅行WiFi</a>
+                                        <a href="#">日本旅行卡</a>
+                                    </p>
+                                    <p>
+                                        <span>热门团购：</span>
+                                        <a href="#">度假公寓</a>
+                                        <a href="#">别墅轰趴</a>
+                                        <a href="#">住店游玩</a>
+                                        <a href="#">情侣酒店</a>
+                                        <a href="#">火车票专享</a>
+                                    </p>
+                                    <p>
+                                        <span>热门推荐: </span>
+                                        <a href="#">东方盐湖城</a>
+                                        <a href="#">长隆海洋王国</a>
+                                        <a href="#">圆明园</a>
+                                        <a href="#">印象武隆</a>
+                                    </p>
+                                </div>
+                                <div class="keyword">
+                                    关键词 <input type="text" placeholder="(选填)商圈/景区/酒店品牌/酒店名称/关键字" />
+                                </div>
+                                <div class="keyword">
+                                    目的地 <input type="text" id="citySelect_six" />
+                                </div>
+                                <button class="i_btn">搜索行程 ></button>
+                            </form>
+                        </div>
+                    </div>
+                </li>
+                <li class="idea clearfix">
+                    <a href="javascript:;">攻略</a>
+                    <div class="i_tab_r">
+                        <div class="i_box">
+                            <div class="i_title">
+                                <a href="javascript:;" class="line">热门游记</a>
+                                <a href="javascript:;">精华游记</a>
+                                <a href="javascript:;">行程计划</a>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+</header>
+
+
+<section>
+   
+<div class="container">
+     <div class="content1">
+     
+             <div class="content1-top">
+                 <i></i>
+                 <div class="content1-topLeft">
+                     <h4>价格机票趋势查询</h4>
+                    <span></span>
+                 </div>
+                 <form action>
+                     城市
+                     <input type="text" placeholder="出发城市">
+                     -
+                      <input type="text" placeholder="到达城市">
+                      <button>搜索</button>
+                 </form>
+             </div>       
+    </div>
+    <div id="main" style="width: 900px;height:500px;"></div>
+
+    <div class="content2">
+        <i></i>
+        <div class="content2-topLeft">
+            <h4>航空公司促销</h4>
+            <span></span>
+        </div>
+        <div class="content2-topRight">
+            <a href="#">更多促销信息> </a>
+        </div>
+        <div class="clear"></div>
+         <div class="row content2-centent2">
+             <img src="images/img/flyTicket_xxx1202_10.jpg" alt="" class="col-xs-3">
+             <img src="images/img/ftyj01_0315_03.jpg" alt="" class="col-xs-3">
+             <img src="images/img/ftyj01_0315_05.jpg" alt="" class="col-xs-3">
+             <img src="images/img/ftyj01_0315_07.jpg" alt="" class="col-xs-3">
+         </div>
+    </div>
+
+    <div class="content3">
+         <i></i>
+        <div class="content3-topLeft">
+            <h4>特价机票汇总</h4>
+            <span id="tj"></span>
+        </div>
+        <div class="content3-topRight">
+            <div class="select">
+                <select name="" id="">
+                    <option selected="selected">北京出发</option>
+                    <option value="">上海</option>
+                    <option value="">广州</option>
+                    <option value="">成都</option>
+                    <option value="">昆明</option>
+                    <option value="">杭州</option>
+                    <option value="">厦门</option>
+                    <option value="">港澳台</option>
+                    <option value="">其他</option>
+                </select>
+            </div>
+            <div class="select">
+                <select name="" id="">
+                    <option selected="selected">全部月份</option>
+                    <option value="">12月</option>
+                    <option value="">1月</option>
+                    <option value="">2月</option>
+                    <option value="">3月</option>
+                    <option value="">4月</option>
+                    <option value="">5月</option>
+                </select>
+            </div>
+            <div class="xz">
+                <a href="">热门</a>
+                <a href="">国内特价机票</a>
+                <a href="">国外特价机票</a>
+                <a href="">亚洲</a>
+                <a href="">欧洲</a>
+                <a href="">美洲</a>
+                <a href="">非洲</a>
+            </div>
+            <a href="#">更多特价机票> </a>
+        </div>
+        <div class="clear"></div>
+        <div class="content3-content">
+            <ul>
+                <li>
+                    <a href="">
+                    <span>北京<i></i>吉隆坡</span> <span>4月15号</span> <span>0.6折</span> <span>￥16166</span>
+                    </a>
+                </li>
+                <li><a href="">
+                    <span>北京<i></i>札幌</span> <span>4月15号</span> <span>0.6折</span> <span>￥16166</span>
+                </a></li>
+                <li><a href="">
+                  <span> 北京<i></i>马尼拉</span>  <span>4月15号</span> <span>0.6折</span> <span>￥16166</span>
+                </a></li>
+                <li><a href="">
+                    <span>北京<i></i>香港</span> <span>4月15号</span> <span>0.6折</span> <span>￥16166</span>
+                </a></li>
+                <li><a href="">
+                   <span>北京<i></i>新加坡</span>  <span>4月15号</span> <span>0.6折</span> <span>￥16166</span>
+                </a></li>
+                <li><a href="">
+                  <span> 北京<i></i>兰卡威</span>  <span>4月15号</span> <span>0.6折</span> <span>￥16166</span>
+                </a></li>
+                <li><a href="">
+                   <span> 北京<i></i>甲米</span> <span>4月15号</span> <span>0.6折</span> <span>￥16166</span>
+                </a></li>
+                <li><a href="">
+                    <span>北京<i></i>曼谷</span> <span>4月15号</span> <span>0.6折</span> <span>￥16166</span>
+                </a></li>
+            </ul>
+            <ul>
+                <li>
+                    <a href="">
+                        <span>北京<i></i>吉普</span> <span>4月15号</span> <span>0.6折</span> <span>￥16166</span>
+                    </a>
+                </li>
+                <li><a href="">
+                    <span>北京<i></i>胡志明市</span> <span>4月15号</span> <span>0.6折</span> <span>￥16166</span>
+                </a></li>
+                <li><a href="">
+                    <span> 北京<i></i>清迈</span>  <span>4月15号</span> <span>0.6折</span> <span>￥16166</span>
+                </a></li>
+                <li><a href="">
+                    <span>北京<i></i>符拉迪沃斯</span> <span>4月15号</span> <span>0.6折</span> <span>￥16166</span>
+                </a></li>
+                <li><a href="">
+                    <span>北京<i></i>巴厘岛</span>  <span>4月15号</span> <span>0.6折</span> <span>￥16166</span>
+                </a></li>
+                <li><a href="">
+                    <span> 北京<i></i>暹粒</span>  <span>4月15号</span> <span>0.6折</span> <span>￥16166</span>
+                </a></li>
+                <li><a href="">
+                    <span> 北京<i></i>斗湖</span> <span>4月15号</span> <span>0.6折</span> <span>￥16166</span>
+                </a></li>
+                <li><a href="">
+                    <span>北京<i></i>福冈</span> <span>4月15号</span> <span>0.6折</span> <span>￥16166</span>
+                </a></li>
+            </ul>
+            <ul>
+                <li>
+                    <a href="">
+                        <span>北京<i></i>广州</span> <span>4月15号</span> <span>0.6折</span> <span>￥16166</span>
+                    </a>
+                </li>
+                <li><a href="">
+                    <span>北京<i></i>深圳</span> <span>4月15号</span> <span>0.6折</span> <span>￥16166</span>
+                </a></li>
+                <li><a href="">
+                    <span> 北京<i></i>三亚</span>  <span>4月15号</span> <span>0.6折</span> <span>￥16166</span>
+                </a></li>
+                <li><a href="">
+                    <span>北京<i></i>乌鲁木齐</span> <span>4月15号</span> <span>0.6折</span> <span>￥16166</span>
+                </a></li>
+                <li><a href="">
+                    <span>北京<i></i>上海</span>  <span>4月15号</span> <span>0.6折</span> <span>￥16166</span>
+                </a></li>
+                <li><a href="">
+                    <span> 北京<i></i>青岛</span>  <span>4月15号</span> <span>0.6折</span> <span>￥16166</span>
+                </a></li>
+                <li><a href="">
+                    <span> 北京<i></i>成都</span> <span>4月15号</span> <span>0.6折</span> <span>￥16166</span>
+                </a></li>
+                <li><a href="">
+                    <span>北京<i></i>大连</span> <span>4月15号</span> <span>0.6折</span> <span>￥16166</span>
+                </a></li>
+            </ul>
+        </div>
+    </div>
+</div>
+     
+</section>
+
+
+
+<!-- footer开始 -->
+<footer>
+    <div class="area">
+        <div class="container">
+            <div class="area-left">
+                <h2>下载 <i></i> 手机客户端</h2>
+                <p>特价机票、一折酒店、出行安全保障、预约担保</br>
+                    最佳旅行路线、吃喝玩乐享在手</p>
+                <button> 立刻下载 </button>
+            </div>
+            <div class="area-right">
+                <div class="areaWechat">
+                    <img src="./images/icon/i_wechat_11.jpg" alt="">
+                    <p>微信公众平台</p>
+                </div>
+                <div class="areaApp">
+                    <img src="./images/icon/i_APP_11.jpg" alt="">
+                    <p>APP下载</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="service">
+        <div class="container">
+            <ul class="img">
+                <li>
+                    <img src="./images/icon/i_serve_11.png" alt="">
+                    <div class="rightText">
+                        <h3>贴心的服务</h3>
+                        <p>业内领先服务标准 用户保障服务</p>
+                    </div>
+                </li>
+                <li>
+                    <img src="./images/icon/i_price_11.png" alt="">
+                    <div class="rightText">
+                        <h3>贴心的服务</h3>
+                        <p>业内领先服务标准 用户保障服务</p>
+                    </div>
+                </li>
+                <li>
+                    <img src="./images/icon/i_num_11.png" alt="">
+                    <div class="rightText">
+                        <h3>贴心的服务</h3>
+                        <p>业内领先服务标准 用户保障服务</p>
+                    </div>
+                </li>
+            </ul>
+            <dl>
+                <dt>旅游资讯</dt>
+                <dd>
+                    <a href="">宾馆索引</a>
+                    <a href="">攻略索引</a>
+                </dd>
+                <dd>
+                    <a href="">机票索引</a>
+                    <a href="">网站导航</a>
+                </dd>
+                <dd>
+                    <a href="">机票索引</a>
+                    <a href="">网站导航</a>
+                </dd>
+                <dd>
+                    <a href="">机票索引</a>
+                    <a href="">网站导航</a>
+                </dd>
+                <dd>
+                    <a href="">机票索引</a>
+                    <a href="">网站导航</a>
+                </dd>
+                <dd>
+                    <a href="">企业差旅索引</a>
+                </dd>
+            </dl>
+            <dl>
+                <dt>加盟合作</dt>
+                <dd>
+                    <a href="">宾馆索引</a>
+                    <a href="">攻略索引</a>
+                </dd>
+                <dd>
+                    <a href="">机票索引</a>
+                    <a href="">网站导航</a>
+                </dd>
+                <dd>
+                    <a href="">机票索引</a>
+                    <a href="">网站导航</a>
+                </dd>
+                <dd>
+                    <a href="">机票索引</a>
+                    <a href="">网站导航</a>
+                </dd>
+                <dd>
+                    <a href="">宾馆索引</a>
+                    <a href="">攻略索引</a>
+                </dd>
+                <dd>
+                    <a href="">企业差旅索引</a>
+                </dd>
+            </dl>
+            <dl>
+                <dt>关于我们</dt>
+                <dd>
+                    <a href="">宾馆索引</a>
+                    <a href="">攻略索引</a>
+                </dd>
+                <dd>
+                    <a href="">宾馆索引</a>
+                    <a href="">攻略索引</a>
+                </dd>
+                <dd>
+                    <a href="">宾馆索引</a>
+                    <a href="">攻略索引</a>
+                </dd>
+                <dd>
+                    <a href="">宾馆索引</a>
+                    <a href="">攻略索引</a>
+                </dd>
+                <dd>
+                    <a href="">宾馆索引</a>
+                    <a href="">攻略索引</a>
+                </dd>
+                <dd>
+                    <a href="">企业差旅索引</a>
+                </dd>
+            </dl>
+        </div>
+    </div>
+    <div class="warp">
+        <div class="container">
+            <p>Copyright©1999-2016, ctrip.com. All rights reserved. | ICP证：沪B2</p>
+            <p><img src="./images/icon/hui1126.png" alt="">沪公网备310105020000xx号</p>
+            <p>旅游违法行为举报电话12318 丨服务质量投诉电话 962020 丨北京市旅游网站落实诚信建设主体责任承诺书</p>
+            <ul class="list-inline">
+                <li><img src="./images/icon/icon1126_11.jpg" alt=""></li>
+                <li><img src="./images/icon/icon1126_13.jpg" alt=""></li>
+                <li><img src="./images/icon/icon1126_15.jpg" alt=""></li>
+                <li><img src="./images/icon/icon1126_17.jpg" alt=""></li>
+                <li><img src="./images/icon/icon1126_19.jpg" alt=""></li>
+                <li><img src="./images/icon/icon1126_21.jpg" alt=""></li>
+                <li><img src="./images/icon/icon1126_23.jpg" alt=""></li>
+                <li><img src="./images/icon/icon1126_25.jpg" alt=""></li>
+                <li><img src="./images/icon/icon1126_27.jpg" alt=""></li>
+            </ul>
+        </div>
+    </div>
+</footer>
+<!-- footer结束 -->
+</body>
+<script src="https://cdn.bootcss.com/jquery/1.12.4/jquery.js"></script>
+<script src="https://cdn.bootcss.com/echarts/3.7.0/echarts.js"></script>
+<script src="https://cdn.bootcss.com/bootstrap/3.3.5/js/bootstrap.js"></script>
+<script src="js/header.js"></script>
+<script src="js/Plane%20ticket.js"></script>
+</html>

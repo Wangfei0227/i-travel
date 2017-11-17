@@ -1,0 +1,562 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>旅游详情页</title>
+    <link href="https://cdn.bootcss.com/bootstrap/3.3.0/css/bootstrap.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/travelDetails.css">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <!--<link rel="stylesheet" type="text/css" href="lib/jquery-video/video-js.min.css">-->
+</head>
+<body>
+<!--头部开始-->
+<header>
+    <div class="header">
+        <div class="container">
+            <div class="logo">
+                <h1>i 旅行</h1>
+            </div>
+            <div class="hotline">
+                <ul>
+                    <li>客服中心</li>
+                    <li>24小时热线：400-855-6666</li>
+                </ul>
+                <div class="phone">
+                    <div class="text icon-mobile-phone"></div>
+                    <!--二维码-->
+                    <div class="planar">
+                        <img src="./images/icon/i_APP_11.jpg" alt="">
+                        <p>手机扫码快速下载</p>
+                        <p>App享受最多50% 优惠力度</p>
+                    </div>
+                </div>
+                <div class="wechat">
+                    <div class="text icon-comments"></div>
+                    <!--二维码-->
+                    <div class="planar">
+                        <img src="./images/icon/i_wechat_11.jpg" alt="">
+                        <p>i旅行微信公众号: </p>
+                        <p>手机扫一扫，享受专属福利</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <div class="nav-box">
+        <div class="container">
+            <ul>
+                <li>
+                    <a href="index.html">
+                        <i class="icon-home"></i>
+                        首页
+                    </a>
+                </li>
+                <li class="active">
+                    <a href="trip.html">
+                        <i class="icon-globe"></i>
+                        旅游
+                    </a>
+                </li>
+                <li>
+                    <a href="hotel/hotel.html">
+                        <i class="icon-hospital"></i>
+                        酒店
+                    </a>
+                </li>
+                <li>
+                    <a href="Plane ticket.html">
+                        <i class="icon-plane"></i>
+                        机票
+                    </a>
+                </li>
+                <li>
+                    <a href="strategy/index.html">
+                        <i class="icon-book"></i>
+                        攻略
+                    </a>
+                </li>
+            </ul>
+            <div class="nav-logo">
+                <a href="">登录</a>
+                <span>|</span>
+                <a href="">注册</a>
+            </div>
+        </div>
+    </div>
+</header>
+<!--头部结束-->
+
+<!--右边固定的小侧栏-->
+<ul class="rightFixed">
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+</ul>
+
+<!--立即购买的盒子-->
+<div class="bought-box ml-nav">
+    <div class="bought">
+        <div class="bought-text">
+            <a href="">旅游</a>
+            >
+            <a href="">海南</a>
+            >
+            <span>三亚5日4晚半自助游(5钻)·【壕减3000！】喜来登品牌海景房 纯玩0购物</span>
+        </div>
+        <a href="" class="buyNow">立即购买 ></a>
+    </div>
+</div>
+
+<div id="fullpage">
+    <!--视频-->
+    <div class="video-box section" >
+        <video class="video divSize" autoplay preload="auto" loop>
+            <source src="./images/video/travel/video1.mp4">
+        </video>
+    </div>
+
+    <!--海水图片-->
+    <div class="brine divSize section">
+        <img src="./images/img/travel_message/ms-01-01.png" alt="">
+        <img src="./images/img/travel_message/ms-01-02.png" alt="">
+        <div class="text">
+            <p>全程喜来登壕华海景房 举步可至私家沙滩 新年班期最高立减3000 元！</p>
+            <p>多人立减：2成人出游立减800/单，4成人立减1800/单，6成人最高减3000元/单！</p>
+            <p>超值赠送：价值120元的5A级景点槟榔谷。这里有罕见的槟榔林海，也有10年内即将消失的黎族绣面纹身。</p>
+        </div>
+        <img src="./images/img/travel_message/ms-01-03.png" alt="">
+    </div>
+
+
+    <!--轮播图-->
+    <div class="banner divSize section">
+        <img class="bannerTitle" src="./images/img/travel_message/ms-02-01.png" alt="">
+        <ul class="bannerBox">
+            <li>
+                <div class="imgTitle">
+                    <div class="text1">
+                        <span>三亚福朋喜来登</span> 度假酒店 | <span>禾温德姆</span> 酒店
+                    </div>
+                    <div class="text2">壕华海景房 &nbsp;&nbsp; 知名品牌 &nbsp;&nbsp; 私家沙滩&nbsp;&nbsp;  举步可至海边</div>
+                </div>
+                <div class="imgDesc">
+                    <img src="./images/img/travel_message/img-line.png" alt="">
+                    <div class="desc-01">
+                        距凤凰国际机场
+                        <br/>
+                        <br/>
+                        9分钟车程
+                    </div>
+                    <div class="desc-01">
+                        距离东\西岛
+                        <br/>
+                        <br/>
+                        10分钟车程
+                    </div>
+                    <div class="desc-01">
+                        距“天涯海角”
+                        <br/>
+                        <br/>
+                        20分钟车程
+                    </div>
+                    <div class="desc-01">
+                        距“南海观音”
+                        <br/>
+                        <br/>
+                        40分钟车程
+                    </div>
+                </div>
+                <img src="./images/img/travel_message/ms-02-02.png" alt="">
+            </li>
+            <li>
+                <div class="imgTitle">
+                    <div class="text1 text">
+                        <span>三亚西藏大厦开元名都</span>  酒店
+                    </div>
+                    <div class="text2 text">16年全新开业知名品牌酒店 &nbsp;&nbsp; 专业酒店集团管理 &nbsp;&nbsp; 房间可远眺三亚湾</div>
+                </div>
+                <div class="imgDesc">
+                    <img src="./images/img/travel_message/img-line.png" alt="">
+                    <div class="desc-01">
+                        距凤凰国际机场
+                        <br/>
+                        <br/>
+                        9分钟车程
+                    </div>
+                    <div class="desc-01">
+                        距离东\西岛
+                        <br/>
+                        <br/>
+                        10分钟车程
+                    </div>
+                    <div class="desc-01">
+                        距“天涯海角”
+                        <br/>
+                        <br/>
+                        20分钟车程
+                    </div>
+                    <div class="desc-01">
+                        距“南海观音”
+                        <br/>
+                        <br/>
+                        40分钟车程
+                    </div>
+                </div>
+                <img src="./images/img/travel_message/ms-02-03.png" alt="">
+            </li>
+            <li>
+                <div class="imgTitle">
+                    <div class="text1">
+                        <span>三亚湾希尔顿欢朋</span> 度假酒店
+                    </div>
+                    <div class="text2">酒店客房均配有“Hampton Bed” &nbsp;标准的双专利床垫和超五星级床上用品</div>
+                </div>
+                <div class="imgDesc">
+                    <img src="./images/img/travel_message/img-line.png" alt="">
+                    <div class="desc-01">
+                        距凤凰国际机场
+                        <br/>
+                        <br/>
+                        9分钟车程
+                    </div>
+                    <div class="desc-01">
+                        距离东\西岛
+                        <br/>
+                        <br/>
+                        10分钟车程
+                    </div>
+                    <div class="desc-01">
+                        距“天涯海角”
+                        <br/>
+                        <br/>
+                        20分钟车程
+                    </div>
+                    <div class="desc-01">
+                        距“南海观音”
+                        <br/>
+                        <br/>
+                        40分钟车程
+                    </div>
+                </div>
+                <img src="./images/img/travel_message/ms-02-04.png" alt="">
+            </li>
+        </ul>
+        <ul class="yuan">
+            <li></li>
+            <li></li>
+            <li></li>
+        </ul>
+    </div>
+
+
+    <!--轮播图下黑色大盒子-->
+    <div class="gray divSize section">
+        <!--精选推荐-->
+        <div class="mention">
+            <div class="mention-l">
+                <img src="./images/img/travel_message/local-list-title.png" alt="">
+                <p class="qc">
+                    全程为您挑选精美景点，精彩纷呈不容错过<br/>
+                    带给您不一样的旅行体验
+                </p>
+                <p class="eng">The world puts off its mask of vastness to its lover.It becomes small as one song, as
+                    one kiss of the eternal.</p>
+            </div>
+            <div class="mention-r fontT">
+                <div class="text-top">SANYA</div>
+                <div class="textCenter">梦回 三亚</div>
+                <div class="line"></div>
+                <p>碧海蓝天金作沙, 椰风阵阵到天涯</p>
+            </div>
+        </div>
+        <!--景区-->
+        <div class="view">
+            <img src="./images/img/travel_message/local-list-ms1.png" alt="">
+            <div class="viewT fontT">
+                <div class="text-top">Rainforest</div>
+                <div class="textCenter">呀诺达雨林文化旅游区</div>
+                <div class="line"></div>
+                <p>北纬18度的热带雨林</p>
+            </div>
+            <img src="./images/img/travel_message/local-list-ms2.png" alt="">
+        </div>
+        <!--蜈支洲-->
+        <div class="wuzZ">
+            <img src="./images/img/travel_message/local-list-ms3.png" alt="">
+            <img src="./images/img/travel_message/local-list-ms4.png" alt="">
+            <div class="wuzZT fontT">
+                <div class="text-top">WuZhiZhou</div>
+                <div class="textCenter">蜈支洲岛</div>
+                <div class="line"></div>
+                <p>中国情人岛 东方马尔代夫</p>
+            </div>
+            <img src="./images/img/travel_message/local-list-ms5.png" alt="">
+        </div>
+
+    </div>
+
+
+
+    <!--文字轮播-->
+    <div class="tourPlan divSize section">
+
+        <ul class="leftTab">
+            <li class="active">第一天
+
+            </li>
+            <li>第二天
+
+            </li>
+            <li>第三天
+
+            </li>
+            <li>第四天
+
+            </li>
+        </ul>
+        <!--右边轮播-->
+        <ul class="tourPlanR">
+            <li>
+                <div class="box">
+                    <div class="yuanBox">
+                        <div class="orDer"></div>
+                        <span>上午</span>
+                    </div>
+                    <div class="title">根据您选择的交通方式抵达。</div>
+                </div>
+                <div class="box">
+                    <div class="yuanBox">
+                        <div class="orDer"></div>
+                        <span>15:00</span>
+                    </div>
+                    <div class="title">前往酒店: 三亚福朋喜来登酒店 或 三亚丽禾温德姆酒店</div>
+                    <div class="textP">
+                        <p>
+                            "自行前往出发地机场，办理登机手续。出发地没有导游哦~抵达三亚，地接社工作人员将举着标识在机场接待出口接您，沿途欣赏南国风光，回酒店休息。
+                            <br/>
+                            今日温馨提醒： <br/>
+                            【1】每个人的航班到达时间有所差异，到达酒店后请自行到前台办理入住手续，如有疑问可咨询酒店前台，酒店一般入住时间为15点之后，如您到达较早，可将行李寄 <br/>
+                            存在前台，在酒店周围逛逛稍作等待； <br/>
+                            【2】第一天到三亚请勿食用过多热带水果及大量海鲜，以防肠胃不适，影响第二天行程哦！<br/>
+                            【3】海南娱乐活动丰富，潜水、美味的海鲜餐；各种晚间活动更是多彩：有骏达车技表演、夜游三亚湾、三亚千古情表演等；除了我们行程中包含景点外，您在自由活<br/>
+                            动休息的时候也可以自行参加您感兴趣的另付费娱乐项目；<br/>
+                            【4】航班：搭乘班机到三亚（具体航班信息请在预订下一步中查看）； 出发地没有导游哦~工作人员会在出行前一天21点前，短信或电话通知您接机事宜，请您保持订<br/>
+                            单中提供的电话通畅；
+                        </p>
+                    </div>
+                </div>
+            </li>
+
+
+            <li>
+                <div class="box">
+
+                    <div class="orDer"></div>
+                    <span> 呀诺达--槟榔谷--亚龙湾</span>
+
+                </div>
+                <div class="box">
+                    <div class="yuanBox">
+                        <div class="orDer"></div>
+                        <span>07:30</span>
+                    </div>
+                    <div class="title">早餐: 中西式自助早餐</div>
+                </div>
+                <div class="box">
+                    <div class="yuanBox">
+                        <div class="orDer"></div>
+                        <span>08:00 </span>
+                    </div>
+                    <div class="title">呀诺达雨林文化旅游区</div>
+                    <div class="textP">
+                        <p>
+                            呀诺达是北纬18度真正没有冬天的热带雨林景区，这里茂密雨林遮天蔽日，流泉叠瀑倾泻而下，在雨林深处的观景台可眺望海棠湾、蜈支洲岛和南湾猴岛。这里年平均温度24度，凉意<br/>
+                            永在。雨林谷内生长着大量的原始森林和次森林，百年古藤、千年古蕨、巨大灵芝、“冷血杀手”见血封喉等热带雨林的六大奇观让人惊叹不已。
+                        </p>
+                        <div class="imgList">
+                            <img src="./images/img/travel_message/plan-2-1.png" alt="">
+                            <img src="./images/img/travel_message/plan-2-2.png" alt="">
+                            <img src="./images/img/travel_message/plan-2-3.png" alt="">
+                            <img src="./images/img/travel_message/plan-2-4.png" alt="">
+                            <img src="./images/img/travel_message/plan-2-5.png" alt="">
+                        </div>
+                    </div>
+                </div>
+            </li>
+
+            <li>
+                <div class="box">
+                    <div class="orDer"></div>
+                    <span>纯玩蜈支洲一整天</span>
+                </div>
+                <div class="box">
+                    <div class="yuanBox">
+                        <div class="orDer"></div>
+                        <span>07:30</span>
+                    </div>
+                    <div class="title">早餐: 中西式自助早餐</div>
+                </div>
+                <div class="box">
+                    <div class="yuanBox">
+                        <div class="orDer"></div>
+                        <span>08:00 </span>
+                    </div>
+                    <div class="title">蜈支洲岛</div>
+                    <div class="textP">
+                        <p>
+                            蜈支洲岛又名情人岛，是海南岛周围为数不多的有淡水资源和丰富植被的小岛，并有许多难得一见的植物。四周海水能见度6-27米，有五彩斑斓的热带鱼。南部水域海底有着保护很好的珊<br/>
+                            瑚礁，是国内最佳潜水基地。 蜈支洲上岛温馨提示：<br/>
+                            1、蜈支洲岛需要坐船上岛，乘船时间约15分钟，请有序排队乘船。如果有晕船的游客可选择靠窗的位子，也可自备晕船药。<br/>
+                            2、玩海的游客请确认带好了泳衣、拖鞋、墨镜、遮阳帽、防晒霜等装备设备。<br/>
+                            3、岛上观光的景点较少，以自由活动为主，消费较陆地稍高，您可以自备些喜爱零食及水果等；本日中餐需要自理。<br/>
+                            4、蜈支洲岛由于游船前往，考虑到可能的颠簸及晕船等情况，景区规定60岁以上及行动不便游客需填写景区的免责声明方可登船上岛；70周岁以上老年人及孕妇出于安全考虑，景区不予接待。<br/>
+                            注：蜈支洲岛旅游景区施行实名购票制，请游客携带身份证或护照等有效证件，在售票处出示方可购票上岛，因证件不全造成无法上岛旅行社不承担任何责任。<br/>
+                            注：该景点的游览时间约为240分钟，含期间船艇往返的时间。
+                        </p>
+                        <div class="imgList">
+                            <img src="./images/img/travel_message/plan-2-16.png" alt="">
+                            <img src="./images/img/travel_message/plan-2-17.png" alt="">
+                            <img src="./images/img/travel_message/plan-2-18.png" alt="">
+                            <img src="./images/img/travel_message/plan-2-19.png" alt="">
+                            <img src="./images/img/travel_message/plan-2-20.png" alt="">
+                        </div>
+                    </div>
+                </div>
+            </li>
+
+
+
+            <li>
+                <div class="box">
+
+                    <div class="orDer"></div>
+                    <span>旅游DIY-您的假期您做主</span>
+
+
+                </div>
+                <div class="box">
+                    <div class="yuanBox">
+                        <div class="orDer"></div>
+                        <span>08:00 </span>
+                    </div>
+                    <div class="title">早餐: 中西式自助早餐</div>
+                </div>
+                <div class="box">
+                    <div class="yuanBox">
+                        <div class="orDer"></div>
+                        <span>08:30 </span>
+                    </div>
+                    <div class="title">自由活动</div>
+                    <div class="textP">
+                        <p>
+                            背着背包的路上<br/>
+                            看过许多人<br/>
+                            听过许多故事<br/>
+                            见过旅行风景<br/>
+                            就这样<br/>
+                            慢慢学会了长大<br/>
+                            流转的时光<br/>
+                            都成为命途中美丽的点缀<br/>
+                            看天，看海，安安静静，不言不语都是好风景<br/>
+                            （今日不含餐，餐食需自理）
+                        </p>
+                    </div>
+                </div>
+            </li>
+
+
+            <li>
+                <div class="box">
+                    <div class="yuanBox">
+                        <div class="orDer"></div>
+                        <span>惜别三亚 </span>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="yuanBox">
+                        <div class="orDer"></div>
+                        <span>7~9:00 </span>
+                    </div>
+                    <div class="title">早餐: 中西式自助早餐</div>
+                </div>
+                <div class="box">
+
+                    <div class="orDer"></div>
+                    <span>根据航班时间，自行安排返回家中 </span>
+
+                    <div class="title">早餐: 中西式自助早餐</div>
+                    <div class="textP">
+                        <p>
+                            您可以在酒店附近的海滩沐浴阳光，嬉戏沙滩，也可以闲逛街头，尝尝海南小巷美食（抱罗粉、文昌鸡、老爸茶……） 请您于12：00之前退房，约定时间车辆送达机场，结束您的海南之行。 <br/>
+                            温馨提示：<br/>
+                            1：请您于12：00之前退房，如超时，多出费用请自行酒店前台现付，今日正餐请自行安排。<br/>
+                            2：如果您是晚些的航班，您可以走在大街小巷，品尝美味小吃，或为亲朋好友购买新鲜的水果，椰子糖、咖啡等土特产。<br/>
+                            3：请您自由活动期间注意安全。同时掌握好时间，保持手机畅通以便送机人员联系，不要误了赶飞机的时间。<br/>
+                        </p>
+                    </div>
+                </div>
+
+
+            </li>
+        </ul>
+    </div>
+</div>
+
+
+
+<footer>
+    <div class="area">
+        <div class="container">
+            <div class="area-left">
+                <h2>下载 <i></i> 手机客户端</h2>
+                <p>特价机票、一折酒店、出行安全保障、预约担保</br>
+                    最佳旅行路线、吃喝玩乐享在手</p>
+                <button> 立刻下载 </button>
+            </div>
+            <div class="area-right">
+                <div class="areaWechat">
+                    <img src="./images/icon/i_wechat_11.jpg" alt="">
+                    <p>微信公众平台</p>
+                </div>
+                <div class="areaApp">
+                    <img src="./images/icon/i_APP_11.jpg" alt="">
+                    <p>APP下载</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="warp">
+        <div class="container">
+            <p>Copyright©1999-2016, ctrip.com. All rights reserved. | ICP证：沪B2</p>
+            <p><img src="./images/icon/hui1126.png" alt="">沪公网备310105020000xx号</p>
+            <p>旅游违法行为举报电话12318 丨服务质量投诉电话 962020 丨北京市旅游网站落实诚信建设主体责任承诺书</p>
+            <ul class="list-inline">
+                <li><img src="./images/icon/icon1126_11.jpg" alt=""></li>
+                <li><img src="./images/icon/icon1126_13.jpg" alt=""></li>
+                <li><img src="./images/icon/icon1126_15.jpg" alt=""></li>
+                <li><img src="./images/icon/icon1126_17.jpg" alt=""></li>
+                <li><img src="./images/icon/icon1126_19.jpg" alt=""></li>
+                <li><img src="./images/icon/icon1126_21.jpg" alt=""></li>
+                <li><img src="./images/icon/icon1126_23.jpg" alt=""></li>
+                <li><img src="./images/icon/icon1126_25.jpg" alt=""></li>
+                <li><img src="./images/icon/icon1126_27.jpg" alt=""></li>
+            </ul>
+        </div>
+    </div>
+</footer>
+</body>
+<script src="https://cdn.bootcss.com/jquery/3.0.0/jquery.js"></script>
+<script src="https://cdn.bootcss.com/bootstrap/3.3.1/js/bootstrap.js"></script>
+<script src="https://cdn.bootcss.com/fullPage.js/2.6.7/jquery.fullPage.min.js"></script>
+<!--<script src="./lib/fullPage.min.js" type="text/javascript"></script>-->
+<!--<script src="lib/jquery-video/video.min.js"></script>-->
+<script src="js/travelDetails.js"></script>
+<script>
+
+</script>
+</html>

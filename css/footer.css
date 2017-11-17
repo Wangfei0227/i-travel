@@ -1,0 +1,106 @@
+
+.area {
+    width:100%;
+    height: 200px;
+    background-color: #1448ae;
+    padding: 20px 0;
+    box-sizing: border-box;
+    color: #fff;
+}
+.area-left {
+    float: left;
+}
+.area-left > h2 {
+    font-size: 23px;
+}
+.area-left > h2 > i{
+    background: url(../images/icon/logo74×34.png) no-repeat center center;
+    display: inline-block;
+    width: 74px;
+    height: 34px;
+    margin: 0 10px;
+}
+.area-left > button {
+    width: 100px;
+    height: 30px;
+    border: none;
+    background-color: #fff;
+    color: #000;
+}
+.area-left > button:hover {
+    color: #fff;
+    background-color: #ffcc00;
+}
+.area-right {
+    float: right;
+}
+.area-right > div {
+    width: 120px;
+    float: left;
+    text-align: center;
+}
+.areaWechat {
+
+    margin-right: 20px;
+}
+.area-right > div > img {
+    width: 100%;
+}
+.service {
+    width: 100%;
+    height: 260px;
+    background-color: #000;
+    color: #fff;
+    padding: 20px 0;
+    box-sizing: border-box;
+}
+.service .img {
+    float: left;
+
+}
+.service .img > li > img {
+    float: left;
+    margin: 30px 10px 0 0;
+
+}
+.service .img > li > .rightText {
+    float: left;
+}
+.service .img > li > .rightText > h3 {
+    font-size: 18px;
+    font-family: '微软雅黑';
+    font-weight: normal;
+}
+.service dl {
+    float: left;
+    margin-left: 145px;
+    margin-top: 20px;
+
+}
+.service dl > dd > a {
+    color: #fff;
+    text-decoration: none;
+    margin-right: 20px;
+}
+.service dl > dd  {
+    line-height: 30px;
+
+}
+.warp {
+    width: 100%;
+    height: 167px;
+    background-color: #000;
+    text-align: center;
+
+}
+.warp > .container {
+    border-top: 1px solid #333;
+    padding: 10px ;
+    box-sizing: border-box;
+}
+.warp p {
+    margin: 7px 0;
+}
+
+
+

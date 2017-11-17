@@ -1,0 +1,501 @@
+* {
+    margin: 0;
+    padding:0;
+}
+ul,ol {
+    list-style: none;
+}
+.container {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+
+
+
+
+.banner img {
+    width: 100%;
+}
+
+.banner {
+    position: relative;
+}
+
+.i-tab {
+    width: 555px;
+    height: 375px;
+    background-color: #fff;
+    position: absolute;
+    left:130px;
+    top: 50px;
+    font-family: '宋体';
+    font-size: 14px;
+    border:2px solid  rgb(26, 178, 219);
+}
+.i-tab-l {
+    width: 80px;
+    height: 375px;
+    background-color: #1AB2DB;
+    float: left;
+}
+.i-tab-l > li {
+    width: 59px;
+    height: 45px;
+    font-size: 16px;
+    text-align: center;
+    line-height: 45px;
+    padding: 0px 8px;
+    background: url('../images/img/i_tabbj_03.jpg')no-repeat left bottom;
+    margin: 0 auto;
+    color: #fff;
+    font-weight: bold;
+    cursor: pointer;
+}
+.i-tab-l > .change {
+    border-left:6px solid #ffc600;
+    background-color: #fff;
+    color:  #1AB2DB;
+    width: 80px;
+    background-image: none;
+}
+.i-tab-r {
+    width: 470px;
+    height: 370px;
+    float: right;
+    position: relative;
+}
+.i-tab-box {
+    position: absolute;
+    left: 0;
+    top: 0;
+    display: none;
+}
+.i-title {
+    width: 420px;
+    border-bottom: 2px solid #ccc;
+    margin: 0 16px;
+}
+.i-title > li {
+    padding: 0 30px;
+    height: 42px;
+    line-height: 42px;
+    color: #666;
+    text-align: center;
+    cursor: pointer;
+
+}
+.i-title > .line {
+    border-bottom: 4px solid #1AB2DB;
+}
+.i-show {
+    margin: 23px 0 0 30px;
+    position: relative;
+}
+.form {
+    position: absolute;
+    left: 0;
+    top: 0;
+    display: none;
+}
+label {
+    font-weight: normal;
+    width: 60px;
+    text-align: right;
+}
+#destin , #key {
+    width: 340px;
+    height: 32px;
+    padding-left: 20px;
+
+}
+#checkIn , #checkOut {
+    width: 126px;
+    height: 32px;
+    padding-left: 10px;
+    margin-right: 14px;
+}
+.discount input , #hotels {
+    margin-bottom: 15px;
+}
+#hotels {
+    width: 128px;
+    height: 32px;
+}
+.i_key {
+    margin-left:80px;
+}
+.i-btn {
+    float: right;
+    width: 200px;
+    margin: 20px;
+}
+.i-cit {
+    padding: 10px;
+    border-bottom: 1px dotted #ccc;
+    margin-bottom: 20px;
+}
+
+.i-destin {
+    position: relative;
+}
+.cityBox {
+    width: 342px;
+    height: 200px;
+    position: absolute;
+    background-color: #fff;
+    top: 37px;
+    left:66px;
+    border: 1px solid #B3CDC0;
+    box-shadow: 2px 2px 3px rgba(0,0,0,.3);
+    font-size: 12px;
+    display: none;
+}
+.i-tip {
+    color: #999;
+    line-height: 20px;
+    padding: 5px;
+    box-sizing: border-box;
+}
+.cityTop {
+    margin-left: 0;
+    border-bottom: 1px solid #ccc;
+}
+.cityTop > li {
+    color: #1448ad;
+    padding: 0 5px;
+
+}
+.cityTop > .on {
+    border-bottom: 1px solid #1448ad;
+}
+.hotCityUl {
+    width: 300px;
+    margin: 5px;
+}
+
+
+
+
+
+
+.sale ,.hotel{
+    height: 630px;
+    padding: 24px 0 0 ;
+}
+.sale .tab {
+    border-bottom: 2px solid #ccc;
+}
+
+.sale .tab > li {
+    padding: 0 10px;
+    height: 34px;
+    line-height: 34px;
+    font-size: 16px;
+    color: #1448ad;
+    font-weight: bold;
+    cursor: pointer;
+}
+.sale .tab > .line {
+    border-bottom: 4px solid #1448ad;
+}
+
+.sale .sale-box > .saleNum {
+    width: 100%;
+    height: 300px;
+    position: absolute;
+    left: 0;
+    top:0;
+    display: none;
+}
+.sale .sale-box {
+    position: relative;
+}
+.sale .sale-box > .saleNum > .sale-top {
+    font-size: 14px;
+    color: #666;
+}
+.sale .sale-box > .saleNum > .sale-top > ul {
+    float: left;
+}
+.sale .sale-box > .saleNum > .sale-top > ul > li {
+    padding: 0 10px;
+}
+.sale .sale-box > .saleNum > .sale-top > ul > li:hover , .sale .sale-box > .saleNum > .sale-top > .sale-mall:hover{
+    cursor: pointer;
+    color: #f9a400;
+}
+.sale .sale-box > .saleNum > .sale-top > .sale-mall {
+    float: right;
+}
+.sale .sale-box > .saleNum > .sale-show > .sale-icon{
+    width: 897px;
+    float: left;
+}
+.sale .sale-box > .saleNum > .sale-show  li {
+    float: left;
+    width: 279px;
+    height: 255px;
+    border: 1px solid #ccc;
+    margin: 0 20px 8px 0;
+    position: relative;
+    overflow: hidden;
+    padding: 0;
+
+}
+.sale .sale-box > .saleNum > .sale-show  li img {
+    width: 100%;
+}
+.sale .sale-box > .saleNum > .sale-show  li .sale-p {
+    position: absolute;
+    bottom: -95px;
+    left: 0;
+    color: #fff;
+    background-color: rgba(0,0,0,.5);
+    padding: 0 4px;
+    transition: 1s all;
+}
+.sale .sale-box > .saleNum > .sale-show  li .sale-p > h3 {
+    width: 271px;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    height: 35px;
+    line-height: 35px;
+    font-size: 16px;
+    font-weight: 600;
+    font-family: "microsoft yahei";
+    margin: 0;
+}
+
+
+.sale .sale-box > .saleNum > .sale-show .sale-tg {
+    float: right;
+}
+
+.sale .sale-box > .saleNum > .sale-show  li h4 {
+    font-size: 16px;
+    color: #333;
+    font-family: "microsoft yahei";
+    margin: 0;
+}
+.sale .sale-box > .saleNum > .sale-show  li > a {
+    text-decoration: none;
+}
+.price {
+    color: #ff4401;
+    font-size: 34px;
+    margin-left: 5px;
+    font-family: "microsoft yahei";
+    display: inline-block;
+    width: 170px;
+}
+.price i {
+    color: #666;
+    font-size: 14px;
+    font-style: normal;
+}
+.price em {
+    color: #666;
+    vertical-align: 10px;
+    font-size: 14px;
+    margin-right: 5px;
+    font-style: normal;
+}
+.hotel-show li {
+    transition: all 0.5s;
+}
+.hotel-show li:hover {
+    box-shadow: 0px 5px 16px rgba(0, 0, 0, .3);
+    transform: translate3d(0px, -3px, 0px);
+}
+
+
+.pushImg img:nth-of-type(1) {
+    margin-right: 25px;
+}
+.ticket-top {
+    height: 34px;
+    line-height: 34px;
+    margin: 10px 0;
+}
+.ticket-top ul {
+    float: left;
+}
+.ticket-top li {
+    padding: 0 10px;
+    color: #1448ad;
+    font-weight: bold;
+    font-size: 16px;
+    cursor: pointer;
+}
+.ticket-top .line {
+    border-bottom: 4px solid  #1448ad;
+}
+.ticket-top span {
+    float: right;
+    cursor: pointer;
+}
+.ticket-top span:hover {
+    color: #ff4401;
+}
+.ticket-show {
+    width: 100%;
+    height: 603px;
+    position: relative;
+
+}
+.ticket-show > div {
+    width: 100%;
+    height: 300px;
+    position: absolute;
+    left: 0;
+    top:0;
+    display: none;
+}
+.ticket-show > .ticketNum > .top > li {
+    cursor: pointer;
+}
+.ticket-show > .ticketNum > .top > li:hover {
+    color: #ff4401;
+}
+.ticket-show > .ticketNum > .ticket-icn > .ticketInfo {
+    width: 900px;
+    float: left;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.ticket-show > .ticketNum > .ticket-icn > .ticketImg {
+    float: right;
+    width: 250px;
+    height: 558px;
+}
+.ticket-show > .ticketNum > .ticket-icn > .ticketImg > img {
+    width: 100%;
+    height: 558px;
+}
+.ticket-show > .ticketNum > .ticket-icn > .ticketInfo li {
+    padding: 20px 18px;
+    width: 210px;
+    height: 172px;
+    border: 2px solid #e9e9e9;
+    transition: all .2s linear 0s;
+    cursor: pointer;
+
+}
+.ticket-show > .ticketNum > .ticket-icn > .ticketInfo li:hover {
+    border: 2px solid #ffca60;
+}
+.ticket-show > .ticketNum > .ticket-icn > .ticketInfo li > a {
+    text-decoration: none;
+    color: #666;
+}
+.ticket-show > .ticketNum > .ticket-icn > .ticketInfo li .ticket-arr {
+    display: inline-block;
+    width: 19px;
+    height: 14px;
+    margin: 0 4px;
+    background: url(../images/img/i-arrow1201_03.png) center center no-repeat;
+}
+.ticket-show > .ticketNum > .ticket-icn > .ticketInfo li .item-pos {
+    font-size: 20px;
+    font-family: "microsoft yahei";
+}
+.ticket-show > .ticketNum > .ticket-icn > .ticketInfo .marBot {
+    margin-bottom: 20px;
+}
+.ticket-show > .ticketNum > .ticket-icn > .ticketInfo li .item-time {
+    font-size: 14px;
+    margin-top:3px;
+}
+.ticket-show > .ticketNum > .ticket-icn > .ticketInfo li .ticketPrice {
+    float: right;
+}
+.ticket-show > .ticketNum > .ticket-icn > .ticketInfo li .ticketQ {
+    font-size: 25px;
+    color: orangered;
+}
+.ticket-show > .ticketNum > .ticket-icn > .ticketInfo li em {
+    vertical-align: 10px;
+}
+
+.travel-show .City {
+    float: left;
+}
+.travel-show .City > dl {
+    width: 192px;
+    margin-top: 20px;
+}
+
+.travel-show .City dd {
+    float: left;
+    padding:3px 10px;
+
+}
+.travel-show .City dd:hover {
+    background-color: #ffc466;
+    color: #fff;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.travel-show .cityImg {
+    float: right;
+    width: 860px;
+}
+.travel-show .cityImg > li {
+    height: 254px;
+    margin: 0 0 7px 7px;
+    width: 279px;
+    transition: all .3s linear 0s;
+    border: 1px solid #ccc;
+    float: left;
+    position: relative;
+}
+.travel-show .cityImg > li > span {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 39px;
+    height: 39px;
+    background: url(../images/icon/lijian0314.png) no-repeat right top;
+}
+.travel-show .cityImg > li img {
+    width: 100%;
+    margin-bottom: 10px;
+}
+.travel-show .cityImg > li:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 5px 16px rgba(0,0,0,.3);
+}
+.travel-show .cityImg > li h4 {
+    display: inline;
+    font-size: 15px;
+    margin: 0 15px 0 5px;
+}
+.travel-show .cityImg > li p {
+    margin: 10px 5px;
+}
+.travel-show .cityImg > li a {
+    text-decoration: none;
+    color: #000;
+}
+
+.organization {
+    width: 100%;
+    height: 156px;
+    margin: 40px auto;
+    position: relative;
+    overflow: hidden;
+}
+.organization ul {
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+.organization li {
+    float: left;
+    padding: 10px;
+    text-align: center;
+}
+

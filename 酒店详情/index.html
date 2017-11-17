@@ -1,0 +1,752 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">  
+    <title>酒店详情页</title>
+    <link href="https://cdn.bootcss.com/bootstrap/3.2.0/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/indexa.css">
+    <link rel="stylesheet" href="css/footer.css">
+</head>
+<body>
+<header>
+    <nav class="navbar navbar-default">
+        <div class="container">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <a class="navbar-brand" href="#">
+                        <img src="../images/icon/logo74×34.png" alt="">
+                    </a>
+                </div>
+                <div class="">
+                    <ul type="none">
+                        <li>客服中心</li>
+                        <li>
+                            24小时热线：400-855-666
+                        </li>
+                        <li><span class="glyphicon glyphicon-phone"></span><span
+                                class="glyphicon glyphicon-comment"></span></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+
+</header>
+
+<div class="nav-first">
+    <nav class="navbar navbar-inverse">
+        <div class="container">
+            <div class="container-fluid">
+                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                    <ul class="nav navbar-nav">
+                        <li><a href="../index.html"><span class="glyphicon glyphicon-home"></span>首页 <span
+                                class="sr-only">(current)</span></a></li>
+                        <li><a href="../trip.html"> <span class="glyphicon glyphicon-globe"></span>旅游</a></li>
+                        <li class="active"><a href="../hotel/hotel.html"> <span class="glyphicon glyphicon-calendar"></span>酒店</a></li>
+                        <li><a href="../Plane ticket.html"><span class="glyphicon glyphicon-plane"></span> 机票 </a></li>
+                        <li><a href="../strategy/index.html"><span class="glyphicon glyphicon-book"></span> 攻略 </a></li>
+                    </ul>
+                </div>
+
+            </div>
+            <div class="dl">
+                  <span>
+                      登录
+                  </span>
+                <span>
+                      注册
+                  </span>
+            </div>
+        </div>
+
+    </nav>
+</div>
+
+<div class="vedioa">
+    <div class="videop">
+        <h1 class="text-center">三亚喜来登度假酒店</h1>
+        <h2 class="text-center">Sheraton Sanya Resort</h2>
+        <p class="text-center">【 亚龙湾 】国家旅游度假区，亚龙湾高尔夫球场对面</p>
+        <p class="text-center">● 东南亚风情 ● 休闲度假 ● 亲子时刻 ● 会议酒店</p>
+        <p class="text-center"><span class="glyphicon glyphicon-play player"> </span><span>查看完整视频</span></p>
+    </div>
+    <div class="vedio1">
+        <div>
+            <p>观看完整视频</p>
+            <span class="glyphicon glyphicon-remove close"></span>
+        </div>
+        <video src="../images/video/travel/video1.mp4" autoplay loop></video>
+    </div>
+    <video class="vedio" src="../images/video/travel/video.mp4" autoplay loop>
+    </video>
+</div>
+
+<div class="container jdlist">
+    <div class="listheader">
+        <p class="text-center">房型列表</p>
+        <p class="text-center">酒店详情</p>
+        <p class="text-center">酒店点评（6258）</p>
+    </div>
+
+    <!--日历      -->
+    <div class="date1">
+        入住
+        <input placeholder="2016-12-08" class="Wdate" type="text"
+               onfocus="WdatePicker({doubleCalendar:true,dateFmt:'yyyy-MM-dd'})"/>
+    </div>
+    <div class="date1 date2">
+        退房
+        <input placeholder="2016-12-20" class="Wdate" type="text"
+               onfocus="WdatePicker({doubleCalendar:true,dateFmt:'yyyy-MM-dd'})"/>
+    </div>
+    <button class="btn btn-info">重新搜索</button>
+
+
+    <div class="datelist">
+        <p class="text-center">
+            含早餐
+
+            <span class="dui">
+                      </span>
+            <i class="glyphicon glyphicon-ok duii">
+            </i>
+        </p>
+        <p class="text-center">
+            立即确认
+            <span class="dui">
+                      </span>
+            <i class="glyphicon glyphicon-ok duii">
+            </i>
+        </p>
+        <p class="text-center">
+            免费取消
+            <span class="dui">
+                      </span>
+            <i class="glyphicon glyphicon-ok duii">
+            </i>
+        </p>
+        <p class="text-center">
+            可预订
+            <span class="dui">
+                      </span>
+            <i class="glyphicon glyphicon-ok duii">
+            </i>
+        </p>
+
+        <!-- Single button -->
+        <div class="btn-group">
+            <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true"
+                    aria-expanded="false">
+                可用优惠券 <span class="caret"></span>
+            </button>
+            <ul class="dropdown-menu">
+                <li><a href="#">暂无可用优惠券</a></li>
+            </ul>
+        </div>
+        <div class="btn-group">
+            <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true"
+                    aria-expanded="false">
+                床型 <span class="caret"></span>
+            </button>
+            <ul class="dropdown-menu">
+                <li><a href="#">不限</a></li>
+                <li><a href="#">大床</a></li>
+                <li><a href="#">双床</a></li>
+                <li><a href="#">单人床</a></li>
+            </ul>
+        </div>
+        <div class="btn-group">
+            <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true"
+                    aria-expanded="false">
+                支付类型 <span class="caret"></span>
+            </button>
+            <ul class="dropdown-menu">
+                <li><a href="#">不限</a></li>
+                <li><a href="#">在线付</a></li>
+                <li><a href="#">到店付</a></li>
+                <li><a href="#">担保</a></li>
+                <li><a href="#">闪住</a></li>
+            </ul>
+        </div>
+    </div>
+
+<div class="house">
+    <div class="househead">
+        <p>
+            房型
+        </p>
+        <p>
+            床型
+        </p>
+        <p>
+            早餐
+        </p>
+        <p>
+            宽带
+        </p>
+        <p>
+            政策
+        </p>
+        <p>
+            房价(含服务费)
+        </p>
+        <p></p>
+        <p></p>
+    </div>
+     <div class="houselist">
+          <div class="left">
+              <img src="../images/img/hotelD01_0315.jpg" alt="">
+              <p class="text-center">豪华大床房查看详情</p>
+          </div>
+         <div class="right">
+               <div class="top">
+                    <p>i旅行直营 <span class="spana">代理</span><span class="spanb">礼</span>大床
+                       <br/> 预订满意度 100%
+                    </p>
+                    <p>无早</p>
+                   <p class="p3">免费</p>
+                   <p class="p4">不可取消</p>
+                   <p>￥ <i class="spanc">2699</i>起</p>
+                   <p class="text-center spand">预定</p>
+
+               </div>
+              <div class="top">
+                 <p>i旅行直营 <span class="spana">代理</span><span class="spanb">礼</span>大床
+                     <br/> 预订满意度 100%
+                 </p>
+                 <p>无早</p>
+                 <p class="p3">免费</p>
+                 <p class="p4">不可取消</p>
+                 <p>￥ <i class="spanc">2699</i>起</p>
+                 <p class="text-center spand">预定</p>
+
+             </div>
+              <div class="top">
+                 <p>i旅行直营 <span class="spana">代理</span><span class="spanb">礼</span>大床
+                     <br/> 预订满意度 100%
+                 </p>
+                 <p>无早</p>
+                 <p class="p3">免费</p>
+                 <p class="p4">不可取消</p>
+                 <p>￥ <i class="spanc">2699</i>起</p>
+                 <p class="text-center spand">预定</p>
+
+             </div>
+              <div class="top">
+                 <p>i旅行直营 <span class="spana">代理</span><span class="spanb">礼</span>大床
+                     <br/> 预订满意度 100%
+                 </p>
+                 <p>无早</p>
+                 <p class="p3">免费</p>
+                 <p class="p4">不可取消</p>
+                 <p>￥ <i class="spanc">2699</i>起</p>
+                 <p class="text-center spand">预定</p>
+
+             </div>
+              <div class="top">
+                 <p>i旅行直营 <span class="spana">代理</span><span class="spanb">礼</span>大床
+                     <br/> 预订满意度 100%
+                 </p>
+                 <p>无早</p>
+                 <p class="p3">免费</p>
+                 <p class="p4">不可取消</p>
+                 <p>￥ <i class="spanc">2699</i>起</p>
+                 <p class="text-center spand">预定</p>
+
+             </div>
+         </div>
+     </div>
+    <div class="houselist houselista">
+        <div class="left">
+            <img src="../images/img/hotelD01_0315.jpg" alt="">
+            <p class="text-center">豪华大床房查看详情</p>
+        </div>
+        <div class="right">
+            <div class="top">
+                <p>i旅行直营 <span class="spana">代理</span><span class="spanb">礼</span>大床
+                    <br/> 预订满意度 100%
+                </p>
+                <p>无早</p>
+                <p class="p3">免费</p>
+                <p class="p4">不可取消</p>
+                <p>￥ <i class="spanc">2699</i>起</p>
+                <p class="text-center spand">预定</p>
+
+            </div>
+            <div class="top">
+                <p>i旅行直营 <span class="spana">代理</span><span class="spanb">礼</span>大床
+                    <br/> 预订满意度 100%
+                </p>
+                <p>无早</p>
+                <p class="p3">免费</p>
+                <p class="p4">不可取消</p>
+                <p>￥ <i class="spanc">2699</i>起</p>
+                <p class="text-center spand">预定</p>
+
+            </div>
+            <div class="top">
+                <p>i旅行直营 <span class="spana">代理</span><span class="spanb">礼</span>大床
+                    <br/> 预订满意度 100%
+                </p>
+                <p>无早</p>
+                <p class="p3">免费</p>
+                <p class="p4">不可取消</p>
+                <p>￥ <i class="spanc">2699</i>起</p>
+                <p class="text-center spand">预定</p>
+
+            </div>
+            <div class="top">
+                <p>i旅行直营 <span class="spana">代理</span><span class="spanb">礼</span>大床
+                    <br/> 预订满意度 100%
+                </p>
+                <p>无早</p>
+                <p class="p3">免费</p>
+                <p class="p4">不可取消</p>
+                <p>￥ <i class="spanc">2699</i>起</p>
+                <p class="text-center spand">预定</p>
+
+            </div>
+            <div class="top">
+                <p>i旅行直营 <span class="spana">代理</span><span class="spanb">礼</span>大床
+                    <br/> 预订满意度 100%
+                </p>
+                <p>无早</p>
+                <p class="p3">免费</p>
+                <p class="p4">不可取消</p>
+                <p>￥ <i class="spanc">2699</i>起</p>
+                <p class="text-center spand">预定</p>
+
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+
+<div class="container ">
+      <div class="jdjs">
+          <div class="left">
+              <h4 class="text-center">酒店介绍</h4>
+              <p class="glyphicon glyphicon-info-sign"></p>
+          </div>
+          <div class="right">
+               <div class="top">
+                   <p class="">
+                       东南亚风情
+                   </p>
+                   <p> 休闲度假</p>
+                   <p>亲子时刻</p>
+                   <p>会议酒店</p>
+               </div>
+              <ul type="none">
+                  <li><span style="margin-right: 20px;color:#999">【东南亚风情】</span>酒店到处都是草坪和热带的大叶绿植，还有大海、沙滩，有着浓浓的海边度假风情。</li>
+                  <li><span style="margin-right: 20px;color:#999">【休闲度假】</span>你可以在spa馆享受安静的理疗，也可以来到室外享受托艇冲浪、滑水、航海等海上活动。</li>
+                  <li><span style="margin-right: 20px;color:#999">【亲子时刻】</span>儿童乐园、室外泳池、私人海滩等设施都是全家感受亲子时光的好去处。</li>
+                  <li><span style="margin-right: 20px;color:#999">【会议酒店】</span>这里是召开会议的理想场所，配备先进的会议设施，并可提供完善的会议服务。</li>
+              </ul>
+              <p>
+                  2003年开业 511间房 联系电话<br/>
+                  　　 三亚喜来登度假酒店位于亚龙湾的中心，正对亚龙湾高尔夫球场。湛蓝的大海和银白的沙滩是海洋生物栖息繁衍的天堂和户外娱乐活动的理想之地。
+                  您在客房内便可观赏到美丽的海景。专为儿童配设的儿童乐园、室外泳池、私人海滩等设施都是亲子游乐的好去处，是全家感受亲子时光的好选择。
+                  这里餐饮服务设施种类繁多，有瑶池西餐厅、香料园亚洲餐厅、白云阁中餐厅、池畔吧、美景台大堂吧、桑吧葡萄酒吧等，时尚入流，充分融合了亚欧菜肴特色；可容纳1400人的大宴会厅及16个会议厅，为您的商务出行提供便利。
+                  如果您想玩刺激的项目，康乐中心可为您安排托艇冲浪、滑水、航海等活动。这里的SPA为您提供各种舒缓压力、安心静性的疗养服务。
+              </p>
+          </div>
+      </div>
+       <div class="jdjs1">
+        <div class="left">
+            <h4 class="text-center">酒店介绍</h4>
+            <p class="glyphicon glyphicon-info-sign"></p>
+        </div>
+        <div class="right">
+            <p>【通用设施】</p>
+            <ul type="none">
+                <li>免费停车场。</li>
+                <li>中餐厅</li>
+                <li>前台保险箱</li>
+                <li>中央空调</li>
+            </ul>
+            <ul type="none">
+                <li>免费停车场。</li>
+                <li>中餐厅</li>
+                <li>前台保险箱</li>
+                <li>中央空调</li>
+            </ul>
+            <ul type="none">
+                <li>免费停车场。</li>
+                <li>中餐厅</li>
+                <li>前台保险箱</li>
+                <li>中央空调</li>
+            </ul>
+            <ul type="none">
+                <li>免费停车场。</li>
+                <li>中餐厅</li>
+                <li>前台保险箱</li>
+                <li>中央空调</li>
+            </ul>
+        </div>
+       </div>
+    <div class="jdjs1 jdjs2">
+        <div class="left">
+
+        </div>
+        <div class="right">
+            <p>【通用设施】</p>
+            <ul type="none">
+                <li>免费停车场。</li>
+                <li>中餐厅</li>
+                <li>前台保险箱</li>
+                <li>中央空调</li>
+            </ul>
+            <ul type="none">
+                <li>免费停车场。</li>
+                <li>中餐厅</li>
+                <li>前台保险箱</li>
+                <li>中央空调</li>
+            </ul>
+            <ul type="none">
+                <li>免费停车场。</li>
+                <li>中餐厅</li>
+                <li>前台保险箱</li>
+                <li>中央空调</li>
+            </ul>
+            <ul type="none">
+                <li>免费停车场。</li>
+                <li>中餐厅</li>
+                <li>前台保险箱</li>
+                <li>中央空调</li>
+            </ul>
+        </div>
+    </div>
+    <div class="jdjs1 jdjs2">
+        <div class="left">
+
+        </div>
+        <div class="right">
+            <p>【通用设施】</p>
+            <ul type="none">
+                <li>免费停车场。</li>
+                <li>中餐厅</li>
+                <li>前台保险箱</li>
+                <li>中央空调</li>
+            </ul>
+            <ul type="none">
+                <li>免费停车场。</li>
+                <li>中餐厅</li>
+                <li>前台保险箱</li>
+                <li>中央空调</li>
+            </ul>
+            <ul type="none">
+                <li>免费停车场。</li>
+                <li>中餐厅</li>
+                <li>前台保险箱</li>
+                <li>中央空调</li>
+            </ul>
+            <ul type="none">
+                <li>免费停车场。</li>
+                <li>中餐厅</li>
+                <li>前台保险箱</li>
+                <li>中央空调</li>
+            </ul>
+        </div>
+    </div>
+    <div class="jdjs1">
+        <div class="left">
+            <h4 class="text-center">酒店介绍</h4>
+            <p class="glyphicon glyphicon-info-sign"></p>
+        </div>
+        <div class="right">
+            <p>【通用设施】</p>
+            <ul type="none">
+                <li>免费停车场。</li>
+                <li>中餐厅</li>
+                <li>前台保险箱</li>
+                <li>中央空调</li>
+            </ul>
+            <ul type="none">
+                <li>免费停车场。</li>
+                <li>中餐厅</li>
+                <li>前台保险箱</li>
+                <li>中央空调</li>
+            </ul>
+            <ul type="none">
+                <li>免费停车场。</li>
+                <li>中餐厅</li>
+                <li>前台保险箱</li>
+                <li>中央空调</li>
+            </ul>
+            <ul type="none">
+                <li>免费停车场。</li>
+                <li>中餐厅</li>
+                <li>前台保险箱</li>
+                <li>中央空调</li>
+            </ul>
+        </div>
+    </div>
+
+</div>
+
+<div class="container" >
+    <div class="yhdp">
+      <div class="top">
+         <div>
+              <h4 class="text-center">
+                  用户点评
+              </h4>
+             <span class="glyphicon glyphicon-user">
+
+             </span>
+         </div>
+          <div>
+              <p style="font-size: 30px;color: #00a0e9">4.9</p>
+              <p>总体评分</p>
+          </div>
+          <div>
+              <p>位置 4.7</p>
+              <p>设施 4.3</p>
+              <p>服务 4.6</p>
+              <p>卫生 4.5</p>
+          </div>
+          <div>
+              <p><span></span></p>
+              <p><span></span></p>
+              <p><span></span></p>
+              <p><span></span></p>
+
+          </div>
+          <div>
+              <input type="text" placeholder="搜索关键词">
+              <button style="height: 30px;" class="btn btn-info">搜索</button>
+          </div>
+      </div>
+    <div class="bottom">
+        <p>全部评论</p>
+        <p>值得推荐</p>
+        <p>有待改善</p>
+        <p>有图片</p>
+    </div>
+    <div class="bottom1">
+        <div class="left">
+         <p>★★★★★5分</p>
+            <span>思****209</span>
+            <p style="border: 1px solid #00a0e9" class="text-center">商务出差</p>
+        </div>
+        <div class="right">
+           <p>商务出差 2016.11.25 入住 高尔夫豪华海景房</p>
+            <p>客观点评下 喜来登是公务接待的不二之选，房型正气 不像其他酒店歪瓜裂枣的。挑高也舒服。朋友住美高梅，明显压抑。园林绿化相当有味道。 游泳池不多，沙滩的那个泳池如图，水深1.7-2.0米 而两米区域又是妹子拍照的角度，但你让她们160+小身板的旱鸭子游过去？这个泳池很漂亮 建议多建设个。 整体推荐入住，不会后悔。</p>
+            <img src="../images/icon/pic_list100100_xxx1212_03.jpg" alt=""><img src="../images/icon/pic_list100100_xxx1212_05.jpg" alt=""><img src="images/icon/pic_list100100_xxx1212_07.jpg" alt="">
+            <img src="../images/icon/pic_list100100_xxx1212_09.jpg" alt="">
+            <p>2016-09-05 18:47 来自：i 旅行</p>
+        </div>
+    </div>
+    <div class="bottom1">
+        <div class="left">
+            <p>★★★★★5分</p>
+            <span>思****209</span>
+            <p style="border: 1px solid #00a0e9" class="text-center">商务出差</p>
+        </div>
+        <div class="right">
+            <p>商务出差 2016.11.25 入住 高尔夫豪华海景房</p>
+            <p>客观点评下 喜来登是公务接待的不二之选，房型正气 不像其他酒店歪瓜裂枣的。挑高也舒服。朋友住美高梅，明显压抑。园林绿化相当有味道。 游泳池不多，沙滩的那个泳池如图，水深1.7-2.0米 而两米区域又是妹子拍照的角度，但你让她们160+小身板的旱鸭子游过去？这个泳池很漂亮 建议多建设个。 整体推荐入住，不会后悔。</p>
+            <img src="../images/icon/pic_list100100_xxx1212_03.jpg" alt=""><img src="../images/icon/pic_list100100_xxx1212_05.jpg" alt=""><img src="images/icon/pic_list100100_xxx1212_07.jpg" alt="">
+            <img src="../images/icon/pic_list100100_xxx1212_09.jpg" alt="">
+            <p>2016-09-05 18:47 来自：i 旅行</p>
+        </div>
+    </div>
+    <div class="bottom1">
+        <div class="left">
+            <p>★★★★★5分</p>
+            <span>思****209</span>
+            <p style="border: 1px solid #00a0e9" class="text-center">商务出差</p>
+        </div>
+        <div class="right">
+            <p>商务出差 2016.11.25 入住 高尔夫豪华海景房</p>
+            <p>客观点评下 喜来登是公务接待的不二之选，房型正气 不像其他酒店歪瓜裂枣的。挑高也舒服。朋友住美高梅，明显压抑。园林绿化相当有味道。 游泳池不多，沙滩的那个泳池如图，水深1.7-2.0米 而两米区域又是妹子拍照的角度，但你让她们160+小身板的旱鸭子游过去？这个泳池很漂亮 建议多建设个。 整体推荐入住，不会后悔。</p>
+            <img src="../images/icon/pic_list100100_xxx1212_03.jpg" alt=""><img src="../images/icon/pic_list100100_xxx1212_05.jpg" alt=""><img src="images/icon/pic_list100100_xxx1212_07.jpg" alt="">
+            <img src="../images/icon/pic_list100100_xxx1212_09.jpg" alt="">
+            <p>2016-09-05 18:47 来自：i 旅行</p>
+        </div>
+    </div>
+</div>
+</div>
+<section>
+
+</section>
+<footer>
+    <div class="area">
+        <div class="container">
+            <div class="area-left">
+                <h2>下载 <i></i> 手机客户端</h2>
+                <p>特价机票、一折酒店、出行安全保障、预约担保</br>
+                    最佳旅行路线、吃喝玩乐享在手</p>
+                <button> 立刻下载 </button>
+            </div>
+            <div class="area-right">
+                <div class="areaWechat">
+                    <img src=".././images/icon/i_wechat_11.jpg" alt="">
+                    <p>微信公众平台</p>
+                </div>
+                <div class="areaApp">
+                    <img src=".././images/icon/i_APP_11.jpg" alt="">
+                    <p>APP下载</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="service">
+        <div class="container">
+            <ul class="img">
+                <li>
+                    <img src=".././images/icon/i_serve_11.png" alt="">
+                    <div class="rightText">
+                        <h3>贴心的服务</h3>
+                        <p>业内领先服务标准 用户保障服务</p>
+                    </div>
+                </li>
+                <li>
+                    <img src=".././images/icon/i_price_11.png" alt="">
+                    <div class="rightText">
+                        <h3>贴心的服务</h3>
+                        <p>业内领先服务标准 用户保障服务</p>
+                    </div>
+                </li>
+                <li>
+                    <img src=".././images/icon/i_num_11.png" alt="">
+                    <div class="rightText">
+                        <h3>贴心的服务</h3>
+                        <p>业内领先服务标准 用户保障服务</p>
+                    </div>
+                </li>
+            </ul>
+            <dl>
+                <dt>旅游资讯</dt>
+                <dd>
+                    <a href="">宾馆索引</a>
+                    <a href="">攻略索引</a>
+                </dd>
+                <dd>
+                    <a href="">机票索引</a>
+                    <a href="">网站导航</a>
+                </dd>
+                <dd>
+                    <a href="">机票索引</a>
+                    <a href="">网站导航</a>
+                </dd>
+                <dd>
+                    <a href="">机票索引</a>
+                    <a href="">网站导航</a>
+                </dd>
+                <dd>
+                    <a href="">机票索引</a>
+                    <a href="">网站导航</a>
+                </dd>
+                <dd>
+                    <a href="">企业差旅索引</a>
+                </dd>
+            </dl>
+            <dl>
+                <dt>加盟合作</dt>
+                <dd>
+                    <a href="">宾馆索引</a>
+                    <a href="">攻略索引</a>
+                </dd>
+                <dd>
+                    <a href="">机票索引</a>
+                    <a href="">网站导航</a>
+                </dd>
+                <dd>
+                    <a href="">机票索引</a>
+                    <a href="">网站导航</a>
+                </dd>
+                <dd>
+                    <a href="">机票索引</a>
+                    <a href="">网站导航</a>
+                </dd>
+                <dd>
+                    <a href="">宾馆索引</a>
+                    <a href="">攻略索引</a>
+                </dd>
+                <dd>
+                    <a href="">企业差旅索引</a>
+                </dd>
+            </dl>
+            <dl>
+                <dt>关于我们</dt>
+                <dd>
+                    <a href="">宾馆索引</a>
+                    <a href="">攻略索引</a>
+                </dd>
+                <dd>
+                    <a href="">宾馆索引</a>
+                    <a href="">攻略索引</a>
+                </dd>
+                <dd>
+                    <a href="">宾馆索引</a>
+                    <a href="">攻略索引</a>
+                </dd>
+                <dd>
+                    <a href="">宾馆索引</a>
+                    <a href="">攻略索引</a>
+                </dd>
+                <dd>
+                    <a href="">宾馆索引</a>
+                    <a href="">攻略索引</a>
+                </dd>
+                <dd>
+                    <a href="">企业差旅索引</a>
+                </dd>
+            </dl>
+        </div>
+    </div>
+
+</footer>
+</body>
+<script src="https://cdn.bootcss.com/jquery/1.11.3/jquery.js"></script>
+<script src="lib/My97DatePicker/WdatePicker.js"></script>
+<script src="https://cdn.bootcss.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+<script>
+
+    $('.player').on('click', function () {
+        $('.videop').css('backgroundColor', 'rgba(255, 255, 255, 0.33)');
+        $('.vedio1').css('display', 'block')
+
+    })
+    $('.close').on('click', function () {
+        $('.videop').css('backgroundColor', 'transparent');
+        $('.vedio1').css('display', 'none')
+
+    })
+    $('.listheader > p:eq(0)').addClass('clickadd');
+    $('.listheader > p').on('click', function () {
+        $(this).addClass('clickadd').siblings().removeClass('clickadd');
+    })
+
+
+    $(window).scroll(function () {
+        var gd = $(document).scrollTop();
+        if (gd >= 520) {
+            $('.listheader').css({position: 'fixed', top: 0,'z-index':2})
+        } else {
+            $('.listheader').css('position', 'static');
+        }
+    })
+
+    var flag = true;
+    $('.datelist>p').on('click', function () {
+        if (flag) {
+            $(this).children().css('display', 'none');
+            flag = false;
+        } else {
+            flag = true;
+            $('.dui').css('display', 'block');
+            $('.duii').css('display', 'inline-block');
+        }
+    });
+
+
+    $('.yhdp .bottom >p:eq(0)').addClass('clickadd');
+    $('.yhdp .bottom >p').on('click', function () {
+        $(this).addClass('clickadd').siblings().removeClass('clickadd');
+    })
+</script>
+</html>
